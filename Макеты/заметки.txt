@@ -1,0 +1,5 @@
+hover у social, .stories__img
+
+доделать option
+
+сделать модалки

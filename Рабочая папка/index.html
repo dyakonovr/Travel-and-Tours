@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travels and tours</title>
+
+  <!-- css -->
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media.css">
+</head>
+
+<body>
+  <div class="site-container">
+    <!--? == HEADER ==  -->
+    <header class="header">
+      <div class="container header__container">
+        <img src="img/logo.svg" alt="Explore and Travel!" class="header__logo logo">
+        <nav class="header__nav nav">
+          <ul class="list-reset nav__list">
+            <li class="nav__item nav__item--selected"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Destinations</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Partner</a></li>
+          </ul>
+        </nav>
+        <button class="header__btn btn-login btn-reset btn btn--small modal-log">Login</button>
+        <button class="header__btn btn-fill btn-reset btn btn--small modal-reg">Register</button>
+      </div>
+
+      <div class="modal">
+        <div class="modal-container">
+          <div class="modal-header">
+            <h2 class="modal-title">Sing in</h2>
+            <button class="modal-close btn-reset"></button>
+          </div>
+          <div class="modal-content">
+            <form method="POST" class="modal-form">
+              <!-- <label for="mail" class="modal-label">Your mail</label> -->
+              <input type="text" id="mail" class="modal-input" placeholder="Your mail">
+              <!-- <label for="password" class="modal-label">Your password</label> -->
+              <input type="password" id="password" class="modal-input" placeholder="Your password">
+              <input type="password" name="repeat-password" hidden="hidden" id="repeat-password"
+                placeholder="Repeat your password" class="modal-input">
+              <input type="submit" class="modal-btn btn btn-reset btn-fill" value="Login">
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--? == /HEADER ==  -->
+
+    <main class="main">
+      <!--? == FIRST SECTION ==  -->
+      <section class="finder">
+        <div class="container finder__container">
+          <h1 class="finder__heading">Explore and<br>Travel</h1>
+          <span class="finder__text">Holiday finder</span>
+          <div class="finder__selects">
+            <!--~ location -->
+            <select name="location" class="finder__select">
+              <option value="title" hidden>Location</option>
+              <option value="1">Moscow</option>
+              <option value="2">New York</option>
+              <option value="3">Paris</option>
+            </select>
+
+            <!--~ activity -->
+            <select name="activity" class="finder__select">
+              <option value="title" hidden>Activity</option>
+              <option value="1">Every day</option>
+              <option value="2">Measuredly</option>
+              <option value="3">Day after day</option>
+
+            </select>
+
+            <!-- ~ grade -->
+            <select name="grade" class="finder__select">
+              <option value="title" hidden>Grade</option>
+              <option value="1">Economy</option>
+              <option value="2">Middle Class</option>
+              <option value="3">All inclusive</option>
+            </select>
+
+            <!--~ date -->
+            <select name="date" class="finder__select">
+              <option value="title" hidden>Date</option>
+              <option id="today" value="1"></option>
+              <option id="tomorrow" value="2"></option>
+              <option id="afterTomorrow" value="3"></option>
+            </select>
+          </div>
+
+          <a class="finder__btn btn btn-fill">Explore</a>
+        </div>
+        <img src="img/man.jpg" alt="Explore and Travel" class="finder__img">
+      </section>
+      <!--? == /FINDER ==  -->
+
+      <!--? == SECOND SECTION == -->
+      <section class="explore">
+        <img src="img/woman.png" alt="A new way to explore the world" class="explore__img">
+        <div class="container explore__container">
+          <div class="explore__text">
+            <h2 class="explore__title title">A new way to explore the<br>world</h2>
+            <p class="explore__desc desc">For decades travellers have reached for Lonely Planet<br>books when looking to
+              plan and
+              execute their perfect<br>
+              trip, but now, they can also let Lonely Planet Experiences<br> lead the way</p>
+            <button class="explore__btn btn btn-fill btn-reset btn--large">Learn more</button>
+          </div>
+        </div>
+      </section>
+      <!--? == /SECOND SECTION == -->
+
+      <!--? == /THIRD SECTION == -->
+      <section class="destination">
+        <div class="container destination__container">
+          <h2 class="destination__title title">Featured destinations</h2>
+          <a href="#" class="destination__link view-all">View all</a>
+          <ul class="destination__list list-reset">
+            <li class="destination__item">
+              <img src="img/1.png" alt="Raja Ampat, Indonesia" class="destination__img">
+              <div class="destination__content">
+                <p class="destination__subtitle">Raja Ampat</p>
+                <p class="destination__desc desc">Indonesia</p>
+              </div>
+            </li>
+            <li class="destination__item">
+              <img src="img/2.png" alt="Fanjingshan, China" class="destination__img">
+              <div class="destination__content">
+                <p class="destination__subtitle">Fanjingshan</p>
+                <p class="destination__desc desc">China</p>
+              </div>
+            </li>
+            <li class="destination__item">
+              <img src="img/3.png" alt="Vevey, Switzerland" class="destination__img">
+              <div class="destination__content">
+                <p class="destination__subtitle">Vevey</p>
+                <p class="destination__desc desc">Switzerland</p>
+              </div>
+            </li>
+            <li class="destination__item">
+              <img src="img/4.png" alt="Skadar, Montenegro" class="destination__img">
+              <div class="destination__content">
+                <p class="destination__subtitle">Skadar</p>
+                <p class="destination__desc desc">Montenegro</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--? == /THIRD SECTION == -->
+
+      <!--? == FOURTH SECTION == -->
+      <section class="guide">
+        <div class="container guide__container">
+          <h2 class="guide__title title">Guides by Thousend<br>Sunny</h2>
+          <div class="guide__desc desc">Packed width tips and advice from our on-the-ground<br>experts, our city guides
+            app (iOS and Android) is the<br>ultimate resource before and during a trip</div>
+          <button class="guide__btn btn btn--large btn-reset btn-fill">Download</button>
+        </div>
+        <img src="img/other.png" alt="Guides by Thousend Sunny" class="guide__img">
+      </section>
+      <!--? == FOURTH SECTION == -->
+      <section class="testimonials">
+        <div class="testimonials__container container">
+          <div class="testimonials__content">
+            <h2 class="testimonials__title title">Testimonials</h2>
+            <ul class="testimonials__list list-reset">
+              <li class="testimonials__item"></li>
+              <li class="testimonials__item"></li>
+              <li class="testimonials__item"></li>
+              <li class="testimonials__item"></li>
+              <li class="testimonials__item"></li>
+            </ul>
+            <p class="testimonials__text">“Quisque in lacus a urna fermentum<br>euismod. Integer mi nibh, dapibus
+              ac<br>scelerisque eu, facilisis quis purus. Morbi<br>blandit sit amet turpis nec”
+            </p>
+            <p class="testimonials__name">Edward Newgate</p>
+            <p class="testimonials__post">Founder Circle</p>
+          </div>
+          <img src="img/term.png" alt="Edward Newgate, Founder Circle" class="testimonials__img">
+          <div class="testimonials__btn-group">
+            <button type="button" class="btn-reset testimonials__btn testimonials__btn--left">&lt;</button>
+            <button type="button" class="btn-reset testimonials__btn testimonials__btn--right">&gt;</button>
+          </div>
+        </div>
+      </section>
+      <!--? == /TESTIMONIALS -->
+
+      <!--? == STORIES -->
+      <section class="stories">
+        <div class="container stories__container">
+          <h2 class="stories__title title">Trending stories</h2>
+          <a href="#" class="stories__link--all view-all">View all</a>
+          <ul class="stories__list list-reset">
+            <li class="stories__item">
+              <img src="img/12.png" alt="The many benefits of taking a healing holiday" class="stories__img">
+              <h3 class="stories__subtitle">The many benefits of<br> taking a healing holiday</h3>
+              <p class="stories__desc desc">‘Helaing holidays’ are on the rise<br>
+                tohelp maximise your health and<br>happines...</p>
+              <a href="#" class="stories__link">Read more</a>
+            </li>
+            <li class="stories__item">
+              <img src="img/13.png" alt="The best Kyoto restaurant" class="stories__img">
+              <h3 class="stories__subtitle">The best Kyoto restaurant<br>
+                to try Japanese food</h3>
+              <p class="stories__desc desc">From tofu to teahouses, here’s our<br>guide to Kyoto’s best restaurants<br>
+                to visit...</p>
+              <a href="#" class="stories__link">Read more</a>
+            </li>
+            <li class="stories__item">
+              <img src="img/14.png" alt="Skip Chichen Itza and head" class="stories__img">
+              <h3 class="stories__subtitle">Skip Chichen Itza and head<br>
+                to this remote Yucatan</h3>
+              <p class="stories__desc desc">It’s remote and challenging to get,<br>
+                but braving the jungle and exploring<br>
+                these ruins without the...</p>
+              <a href="#" class="stories__link">Read more</a>
+            </li>
+            <li class="stories__item">
+              <img src="img/15.png" alt="Surf’s up at these beginner spots around the world" class="stories__img">
+              <h3 class="stories__subtitle">Surf’s up at these beginner<br>
+                spots around the world</h3>
+              <p class="stories__desc desc">If learning to surf has in on your to-<br>
+                do list for a while, the good news<br>
+                is: it’s never too late...</p>
+              <a href="#" class="stories__link">Read more</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--? == /STORIES -->
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__left-side">
+          <img src="img/logo.svg" alt="Travels and tours" class="footer__logo logo">
+          <p class="footer__text">Plan and book your perfect trip with<br>
+            expert advice, travel tips destination<br>
+            information from us</p>
+          <p class="footer__right">&copy;2020 Thousand Sunny. All rights reserved</p>
+        </div>
+        <div class="footer__list-group">
+          <ul class="footer__list list-reset">
+            <li class="footer__item"><a href="#" class="footer__link footer__subtitle">Destinations</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Africa</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Antarctica</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Asia</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Europe</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">America</a></li>
+          </ul>
+          <ul class="footer__list list-reset">
+            <li class="footer__item"><a href="#" class="footer__link footer__subtitle">Shop</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Destination Guides</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Pictorial & Gifts</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Special Offers</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Delivery Times</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">FAQs</a></li>
+          </ul>
+          <ul class="footer__list list-reset">
+            <li class="footer__item"><a href="#" class="footer__link footer__subtitle">Interests</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Adventure Travel</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Art And Culture</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Wildlife And Nature</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Family Holidays</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Food And Drink</a></li>
+          </ul>
+        </div>
+
+        <ul class="footer__social social list-reset">
+          <li class="social__item"><a href="https://twitter.com" class="social__link social__link--tw"></a></li>
+          <li class="social__item"><a href="https://www.facebook.com" class="social__link social__link--fb"></a></li>
+          <li class="social__item"><a href="https://www.instagram.com" class="social__link social__link--inst"></a>
+          </li>
+          <li class="social__item"><a href="https://linkedin.com" class="social__link social__link--in"></a></li>
+          <li class="social__item"><a href="https://youtube.com" class="social__link social__link--yt"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JAVASCRIPT, js, JS -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/c8cfcff532.js" crossorigin="anonymous"></script> <!-- font-awesome -->
+</body>
+
+</html>
