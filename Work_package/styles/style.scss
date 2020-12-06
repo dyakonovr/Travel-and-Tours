@@ -11,7 +11,7 @@ $footer-text: #848484;
 // ? == /Variables ==
 
 // ? == FONTS ==
-@import 'fonts';
+@import 'fonts.css';
 // ? == /FONTS ==
 
 *,
@@ -587,7 +587,7 @@ img {
     justify-content: center;
 
     position: absolute;
-    right: 172px;
+    right: 171px;
     bottom: -98px;
 
     width: 132px;
